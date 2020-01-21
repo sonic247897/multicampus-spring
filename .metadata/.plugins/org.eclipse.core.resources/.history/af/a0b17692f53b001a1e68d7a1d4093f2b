@@ -1,0 +1,10 @@
+package factorypattern;
+public class ConnectionTest {
+	public static void main(String[] args) {
+		ConnectionFactory factory=new ConnectionFactory();
+		Connection oracle=factory.getConnection (args[0]);
+		oracle.connect();
+		
+	}
+
+}

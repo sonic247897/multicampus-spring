@@ -1,0 +1,20 @@
+package exam01;
+
+public interface TV {
+	// 1. 전원켜기
+	void powerOn();
+	void turnOn();
+	
+	// 2. 전원끄기
+	void powerOff();
+	void turnOff();
+	
+	// 3. 소리 올리기
+	void volumeUp();
+	void soundUp();
+	
+	// 4. 소리 낮추기
+	void volumeDown();
+	volumeDown()
+	
+}

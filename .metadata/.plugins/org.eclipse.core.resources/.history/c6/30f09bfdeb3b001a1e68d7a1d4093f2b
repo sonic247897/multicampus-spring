@@ -1,0 +1,22 @@
+package app1;
+
+public class MyBeanTest {
+	public static void main(String[] args) {
+		
+		
+	}
+	// 메소드 두 곳에서 같은 객체를 받고 다른 스타일로 사용
+	public static void run(MyBeanStyleA obj) {
+		System.out.println("************************");
+		obj.testHello("현빈");
+		obj.testHello("현빈");
+		System.out.println("************************");
+	}
+	public static void show(MyBeanStyleA obj) {
+		System.out.println("========================");
+		obj.testHello("현빈");
+		obj.testHello("현빈");
+		System.out.println("========================");
+	}
+	
+}

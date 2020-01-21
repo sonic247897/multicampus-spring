@@ -1,0 +1,28 @@
+package app3;
+/*
+ * 스프링을 이용해서 프로그램을 실행하기
+ * 	- new연산자를 이용해서 객체생성하는 코드를 직접 정의하지 않는다.
+ * 		(API 제외 ex)Random, date객체)
+*/
+public class MyBeanTest {
+	public static void main(String[] args) {
+		MyBeanStyle obj = new MyBeanStyleB();
+		run(obj);
+		show(obj);
+		
+	}
+	public static void run(MyBeanStyle obj) {
+		System.out.println("************************");
+		obj.hello("현빈");
+		obj.hello("현빈");
+		System.out.println("************************");
+	}
+
+	public static void show(MyBeanStyle obj) {
+		System.out.println("========================");
+		obj.hello("현빈");
+		obj.hello("현빈");
+		System.out.println("========================");
+	}
+	
+}
