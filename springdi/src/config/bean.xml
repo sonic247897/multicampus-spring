@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean id="tv" class="dl.exam01.SamsungTV" /> -->
+	<bean id="tv" class="dl.exam01.LgTV" />
+	
+	<!-- InsaImpl에 기본생성자 X: 기본생성자 못 찾는 오류  
+	java.lang.NoSuchMethodException: di.constructor.basic.InsaImpl.<init>()-->
+	<bean id="insa" class ="di.constructor.basic.InsaImpl">
+		<!-- 이미 만들어져 있는 객체 참조  -->
+		<constructor-arg ref="mydao"/> <!-- 값이면 value=  -->
+	</bean>
+	
+	<!-- java파일에는 전부 abstract타입으로 받고, bean.xml에서는 실제 쓰는 객체를 정의한다.  -->
+	<bean id="dice" class ="di.constructor01.Dice"/>
+	<bean id="player" class ="di.constructor01.Player">
+		<constructor-arg ref="dice"/>
+	</bean>
+	
+</beans>

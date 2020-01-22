@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="basic.MemberDAO"/>
+<fullyQualifiedTypeName name="app1.MyBeanStyleA"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.ApplicationException"/>
+<fullyQualifiedTypeName name="app3.MyBeanStyle"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.ClassPathResource"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
+<fullyQualifiedTypeName name="di.constructor.basic.MemberDAO"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="di.constructor01.AbstractDice"/>
+<fullyQualifiedTypeName name="di.constructor01.AbstractPlayer"/>
 </qualifiedTypeNameHistroy>

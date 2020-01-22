@@ -11,7 +11,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 */
 public class MyBeanTest {
 	public static void main(String[] args) {
-		// 스프링의 Factory클래스를 생성 - GenericXml + ApplicationContext
+		// 스프링의 Factory클래스를 생성 - ApplicationContext계열
 		// 상위객체로 정의<다형성>
 		ApplicationContext factory = 
 				new GenericXmlApplicationContext("/config/bean.xml");
