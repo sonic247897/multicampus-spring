@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\student\Downloads\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="false" key="Replace"/>
+	<item value="false" key="Annotations"/>
+	<item value="false" key="Comments"/>
+	<item value="C:\iot\setup\spring-framework-4.2.4.RELEASE-dist\spring-framework-4.2.4.RELEASE\libs" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="false" key="InstanceOf"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
@@ -11,6 +15,13 @@
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
+	</section>
+	<section name="DialogBounds_SuperInterfaceSelectionDialog">
+		<item value="373" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="549" key="DIALOG_HEIGHT"/>
+		<item value="85" key="DIALOG_X_ORIGIN"/>
+		<item value="-47" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
@@ -23,7 +34,7 @@
 		<item value="531" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="678" key="DIALOG_HEIGHT"/>
-		<item value="383" key="DIALOG_X_ORIGIN"/>
+		<item value="116" key="DIALOG_X_ORIGIN"/>
 		<item value="48" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="NewClassWizardPage">
@@ -43,8 +54,8 @@
 		<item value="540" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="696" key="DIALOG_HEIGHT"/>
-		<item value="378" key="DIALOG_X_ORIGIN"/>
-		<item value="36" key="DIALOG_Y_ORIGIN"/>
+		<item value="678" key="DIALOG_X_ORIGIN"/>
+		<item value="35" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
 		<item value="true" key="ShowStatusLine"/>
@@ -58,15 +69,28 @@
 			<item value="167" key="DIALOG_Y_ORIGIN"/>
 		</section>
 	</section>
+	<section name="DialogBounds_GenerateToStringDialog">
+		<item value="516" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="691" key="DIALOG_HEIGHT"/>
+		<item value="390" key="DIALOG_X_ORIGIN"/>
+		<item value="40" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
 	</section>
 	<section name="SourceActionDialog.methods">
+		<item value="true" key="IgnoreDefault"/>
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="Comments"/>
 		<item value="1" key="VisibilityModifier"/>
+		<item value="0" key="StringStyle"/>
+		<item value="0" key="ToStringTemplateSelected"/>
+		<item value="false" key="LimitElements"/>
+		<item value="false" key="SkipNull"/>
 		<item value="false" key="FinalModifier"/>
+		<item value="10" key="LimitValue"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item value="7" key="index"/>

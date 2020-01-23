@@ -11,6 +11,7 @@ public class Player implements AbstractPlayer{
 	public Player(AbstractDice d) {
 		super();
 		this.d = d;
+		System.out.println("Player의 매개변수 1개 생성자");
 	}
 	
 	// totalValue: 프로그램이 실행될 때 발생하는 값이 연결되므로 멤버변수라도 di 적용X

@@ -2,11 +2,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<!-- <bean id="tv" class="dl.exam01.SamsungTV" /> -->
-	<bean id="tv" class="dl.exam01.LgTV" />
 	
-	<!-- InsaImpl에 기본생성자 X: 기본생성자 못 찾는 오류  
-	java.lang.NoSuchMethodException: di.constructor.basic.InsaImpl.<init>()-->
+	<bean id="speaker" class="book.exam.constructor.AppleSpeaker"/>
+	<bean id="tv" class="book.exam.constructor.LgTV">
+		<constructor-arg ref="speaker"/>
+	</bean>
+	
+	<bean id="mydao" class ="di.constructor.basic.MemberDAO"/>
+	<!-- InsaImpl에 기본생성자 X: 기본생성자 못 찾는 오류 
+ 		->java.lang.NoSuchMethodException: di.constructor.basic.InsaImpl.<init>()-->
 	<bean id="insa" class ="di.constructor.basic.InsaImpl">
 		<!-- 이미 만들어져 있는 객체 참조  -->
 		<constructor-arg ref="mydao"/> <!-- 값이면 value=  -->
@@ -16,6 +20,23 @@
 	<bean id="dice" class ="di.constructor01.Dice"/>
 	<bean id="player" class ="di.constructor01.Player">
 		<constructor-arg ref="dice"/>
+	</bean>
+	
+	<bean id="logic" class="di.constructor02.LogicImpl"/>
+	<bean id="service" class="di.constructor02.ServiceImpl">
+		<!-- 생성자 매개변수 순서대로  -->
+		<constructor-arg ref="logic"/>
+		<constructor-arg value="이민호"/> <!-- String은 ref지만 value처럼 사용하고 있다 -->
+		<constructor-arg >
+			<value>안녕</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="dao" class="di.constructor03.OracleArticleDAO"/>
+	<bean id="mgr" class="di.constructor03.WriteArticleMgr">
+		<constructor-arg> 
+			<ref bean ="dao"/>
+		</constructor-arg>
 	</bean>
 	
 </beans>
