@@ -1,9 +1,0 @@
-package exam01;
-
-public interface TV {
-	// 하나로 메소드 통일
-	void turnOn();
-	void turnOff();
-	void volumeUp();
-	void volumeDown();
-}
